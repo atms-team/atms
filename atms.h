@@ -27,11 +27,11 @@ namespace ATMS
     class Flag
     {
         public:
-            static const uint8_t LatSouth = 0x10;
+            static const uint8_t South = 0x10;
             static const uint8_t HasAltitude = 0x20;
             static const uint8_t HasCourse = 0x40;
             static const uint8_t HasSpeed = 0x80;
-            static const uint8_t LonWest = 0x10;
+            static const uint8_t West = 0x10;
             static const uint8_t HasPHGD = 0x20;
             static const uint8_t HasTimestamp = 0x40;
             static const uint8_t MessageSupport = 0x80;
