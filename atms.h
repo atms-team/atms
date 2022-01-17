@@ -3,38 +3,37 @@
 
 namespace ATMS
 {
-    class PacketType
+    enum class PacketType : uint8_t
     {
-        public:
-            static const uint8_t Test = 0;
-            static const uint8_t Position = 1;
-            static const uint8_t Status = 2;
-            static const uint8_t Object = 3;
-            static const uint8_t Message = 4;
-            static const uint8_t MessageAck = 5;
-            static const uint8_t TelemetryData = 6;
-            static const uint8_t TelemetryDefinition = 7;
-            static const uint8_t Weather = 8;
-            static const uint8_t SubscriptionRequest = 9;
-            static const uint8_t LocalInfo = 10;
-            static const uint8_t Comment = 11;
-            static const uint8_t UserDefined = 127;
-            static const uint8_t RoutingAnnouncement = 128;
-            static const uint8_t Traceroute = 129;
-            static const uint8_t Ack = 255;
+        Test = 0,
+        Position = 1,
+        Status = 2,
+        Object = 3,
+        Message = 4,
+        MessageAck = 5,
+        TelemetryData = 6,
+        TelemetryDefinition = 7,
+        Weather = 8,
+        SubscriptionRequest = 9,
+        LocalInfo = 10,
+        Comment = 11,
+        UserDefined = 127,
+        NodeBeacon = 128,
+        StationRegistration = 129,
+        Ack = 255
     };
 
     class Flag
     {
-        public:
-            static const uint8_t South = 0x10;
-            static const uint8_t HasAltitude = 0x20;
-            static const uint8_t HasCourse = 0x40;
-            static const uint8_t HasSpeed = 0x80;
-            static const uint8_t West = 0x10;
-            static const uint8_t HasPHGD = 0x20;
-            static const uint8_t HasTimestamp = 0x40;
-            static const uint8_t MessageSupport = 0x80;
+    public:
+        static const uint8_t South = 0x10;
+        static const uint8_t HasAltitude = 0x20;
+        static const uint8_t HasCourse = 0x40;
+        static const uint8_t HasSpeed = 0x80;
+        static const uint8_t West = 0x10;
+        static const uint8_t HasPHGD = 0x20;
+        static const uint8_t HasTimestamp = 0x40;
+        static const uint8_t MessageSupport = 0x80;
     };
 }
 
